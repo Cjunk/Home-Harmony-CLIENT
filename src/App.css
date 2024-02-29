@@ -1,0 +1,59 @@
+@import url("./styles/palette.css");
+
+/* Rest of your global styles go here */
+div{
+  user-select:none;
+}
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+li,
+h1,
+h2,
+p1,
+p,
+p2,
+label {
+  user-select: none;
+}
+ul {
+  margin: 0;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  opacity: 0.8;
+}
+.App-logo {
+  height: 400vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: blue;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Style for mobile screens */
+@media (max-width: 768px) {
+  .app-container {
+    /* Your specific styles for mobile layout */
+  }
+}

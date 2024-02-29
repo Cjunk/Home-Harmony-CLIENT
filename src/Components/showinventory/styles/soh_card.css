@@ -1,0 +1,36 @@
+@import url("../../../styles/palette.css");
+.element-content-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-bottom:50px;
+}
+.element-content-container .img-wrapper {
+    margin: 0;
+    padding: 0;
+    /* Adjust these if necessary to fit the fixed-size image or based on your layout needs */
+    width: auto;
+    /* This can be adjusted or even removed depending on your specific layout needs */
+    height: auto;
+    /* Same as above, adjust or remove as needed */
+}
+
+.element-content-container .img-wrapper img {
+    max-width:500px;;
+    max-height:500px;
+    /* Fixed width */
+    /* Fixed height */
+    border: ridge 5px gold;
+}
+.eachListRow{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    
+}
+.details-list {
+    list-style: none;
+}
+
+.details-list li {
+    text-align:left;
+}

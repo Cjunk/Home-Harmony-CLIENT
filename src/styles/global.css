@@ -1,0 +1,140 @@
+:root {
+  /* \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ 
+                         Show inventory data list */
+  --inv-column-count: 10;
+  /* /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\  */
+  --header-height: 90px;
+  --header-height2: calc(var(--header-height) + 27px);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-   THE DATA HEADING AND ROW -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.data-heading {
+  background-color: var(--inv-column-headings-background-color);
+  position: sticky;
+  top: var(--header-height2);
+  z-index: 10;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.data-row,
+.data-heading {
+  display: grid;
+  /* grid-template-columns: repeat(var(--inv-column-count), 1fr); Spans across 6 columns */
+  grid-template-columns: repeat(3, 0.5fr) 4fr repeat(4, 1fr);
+  color: var(--inv-col-headings-text);
+}
+.data-row {
+  padding-left: 5px;
+  text-align: left;
+  margin-top: 2px;
+}
+.data-row {
+  border-color: var(--inv-item-row-border-bottom);
+  border-bottom: var(--data-list-item-border-clr);
+}
+.data-row {
+  width: 100%;
+  color: var(--inv-items-text);
+}
+.data-row{
+  width: 100%;
+  color: var(--inv-items-text);
+}
+.data-row-bottom #qty {
+  width: 100%;
+  color: var(--inv-items-text);
+}
+.data-row-bottom #description {
+  width: 100%;
+  color: var(--inv-items-text);
+}
+.data-row-bottom #picture {
+  width: 100%;
+  color: var(--inv-items-text);
+}
+
+.data-row-container:hover {
+  background-color: var(--inv-item-background-color-hvr);
+  cursor: pointer;
+  border-bottom: solid 1px;
+  color:var(--inv-item-background-color-hvr-txt);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-   THE ITEMS  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.theItemUL {
+  list-style-type: none; /* Remove default list styles */
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+}
+
+.item-image {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  margin-right: 10px; /* Optional: Add margin for spacing */
+  margin-bottom: 1px;
+}
+.heading-item-property,
+.item-property,
+.item-property-qty,
+.heading-item-property-qty {
+  width: 100%; /* Adjust the width as needed */
+  /* Optionally, add additional styles like padding or margin */
+  align-self: center;
+  font-size: 12px;
+  margin-right: auto;
+ z-index:100;
+}
+
+.data-heading #name {
+  width: 100%;
+  color: var(--inv-col-headings-text);
+}
+.data-heading #location {
+  width: 100%;
+  color: var(--inv-col-headings-text);
+}
+.data-heading #qty {
+  width: 100%;
+  color: var(--inv-col-headings-text);
+}
+.data-heading #description {
+  width: 100%;
+  color: var(--inv-col-headings-text);
+}
+.data-heading #picture {
+  width: 100%;
+  color: var(--inv-col-headings-text);
+}
+
+.item-property-NAME {
+  width: 100%;
+}
+.form-edit-global {
+     border: var(--frm-border-style-and-color);
+    border-radius: 5px;
+    background-color:var(--operations-frm-background-color);
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left; 
+}
+
+
+
+@media (max-width: 768px) {
+  .data-heading {
+    top: 178px;
+  }
+  .heading-item-property,
+  .item-property,
+  .item-property-qty,
+  .heading-item-property-qty {
+    width: 100%; /* Adjust the width as needed */
+    /* Optionally, add additional styles like padding or margin */
+    align-self: center;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}

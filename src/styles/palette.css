@@ -1,0 +1,79 @@
+/* Import Google Fonts and global styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./global.css";
+
+/* Define color variables */
+:root {
+  /* Gradients */
+  --gradient-primary: linear-gradient(to right, #0077cc, #33aaff); /* Ocean Blue to Sky Blue */
+  --gradient-secondary: linear-gradient(to right, #555555, #777777); /* Dim Gray to Gray */
+  --gradient-accent: linear-gradient(to right, #cc0066, #ff66aa); /* Raspberry to Pink */
+  --gradient-background: linear-gradient(to right, #f5f5f5, #dddddd); /* Light Silver to Silver */
+
+  /* Colors */
+  --primary-color: rgb(25, 59, 247); /* Ocean Blue */
+  --secondary-color: #2f14c5; /* Dim Gray */
+  --accent-color: #0e00cc; /* Raspberry */
+  --background-color: #dadde7; /* Light Silver */
+  --text-color: #750606; /* Dark Gray */
+  --primary-text-color: rgb(12, 1, 1);
+
+  /* Buttons */
+  --hover-button: blue;
+
+  /* Header */
+  --header-bckgrnd-clr: darkblue;
+  --heading-main-txt-clr: white;
+  --header-txt-color: var(--primary-text-color);
+  --heading-main-bottom-border-color: green;
+
+  /* Navbar */
+  --navbar-background1: #100231; /* White Smoke */
+  --navbar-background2: var(--secondary-color);
+  --navbar-buttons-color: #ffffff; /* White */
+  --navbar-buttons-background: var(--primary-color); /* Ocean Blue */
+  --navbar-button-login-background: #66cc99; /* Light Green */
+  --myfont: "Roboto", sans-serif;
+  --navbar-brd-clr: grey;
+
+  /* Operation Navbar */
+  --operation-navbar-background: var(--primary-color);
+  --operation-navbar-but-back-clr: var(--primary-color);
+  --operation-submenu-background: var(--primary-color);
+  --operation-submenu-background-hvr: rgb(21, 32, 95);
+  --operation-submenu-txt-color: white;
+  --operation-menu-txt-clr: white;
+  --operation-submenu-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  --operation-yourinventory-navbar-bck-clr:var( --operation-navbar-background);
+
+  /* Registration and Login Form */
+  --frm-reg-log-bgrnd-clr: rgb(31, 31, 187);
+  --frm-reg-log-heading-clr: white;
+  --frm-reg-log-lbl-color: white;
+  --frm-reg-log-but-clr: #007bff;
+  --frm-reg-log-but-clr-hvr: var(--hover-button);
+
+  /* Internal Form */
+  --frm-background-color: white;
+  --frm-border-style-and-color: 1px solid grey;
+  --frm-label-font-color: Blue;
+  --frm-txt-border: 1px solid #ccc;
+
+  /* Data Lists */
+  --inv-item-background-color-hvr: #0c3461; /* Light Coral */
+  --inv-item-background-color-hvr-txt: #c3cdd8; /* Light Coral */
+  --inv-column-headings-background-color: var(--navbar-background2);
+  --inv-col-headings-text: #ffffff; /* White */
+  --inv-items-text: #061ace; /* Black */
+  --inv-item-row-border-bottom: #a51414; /* Dark Gray */
+  --data-list-background: rgb(216, 225, 226);
+  --data-list-item-border-clr: 1mm ridge rgba(229, 238, 230, 0.6);
+
+  /* Data Component */
+  --data-row-column-header-text-color: blue;
+  --data-row-column-subtext-text-color: rgb(4, 0, 22);
+
+  /* Data Forms */
+  --operations-frm-background-color: white;
+}
+

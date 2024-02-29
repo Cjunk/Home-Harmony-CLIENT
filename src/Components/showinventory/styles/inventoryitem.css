@@ -1,0 +1,39 @@
+@import url("../../../styles/palette.css");
+.inventory-container {
+  background-color: var(--data-list-background);
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  #Date-added {
+    display: none; /* Hide all properties and images */
+  }
+  .theitem-container li {
+    display: block; /* Display list items vertically */
+  }
+  .inventory-row,
+  .inventory-heading {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Spans across 6 columns */
+  }
+  .inventory-heading {
+    background-color: var(--inv-column-headings-background-color);
+    position: sticky;
+    top: 190px;
+    padding-top: 10px;
+  }
+  .theitem-container li .item-property,
+  .theitem-container li .item-property-qty,
+  .theitem-container li .item-image {
+    display: inline; /* Show only item name, location, and quantity */
+  }
+
+  .the-inventory-data-row-container{
+    grid-template-columns: 1fr 0.5fr 1.5fr 1fr 0.25fr 0.5fr 1fr;
+  }
+}

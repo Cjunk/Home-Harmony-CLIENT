@@ -1,0 +1,65 @@
+/* Form container styles */
+@import url("../../../styles/palette.css");
+.Location-form-container{
+    position:sticky;
+    top:var(--header-height2);
+    background-color:var(--data-list-background);
+    
+}
+.locationForm {
+    /* border: var(--frm-border-style-and-color); */
+    border-radius: 5px;
+    background-color:var(--operations-frm-background-color);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom:5px;
+}
+/* Style for each form field */
+form label {
+    display: block;
+    margin-bottom: 2px;
+    color:var(--frm-label-font-color);
+}
+/* Style for input and textarea fields */
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea {
+    padding: 2px;
+    margin-top: 1px;
+    border: var(--frm-txt-border);
+    border-radius: 4px;
+    margin-left:10px;
+}
+.dd{
+    display:grid;
+    grid-template-columns: 2fr 50fr;
+    justify-content: space-around;
+    margin-left:5px;
+    
+}
+
+form button[type="submit"]{
+    width:20%;
+}
+.input-small {
+    width: 7%;  
+}
+.input-medium{
+    width:50%;
+}
+.input-large {
+    width: 70%;
+}
+
+.textArea {
+    width:100%;
+    
+}
+
+/* Style for checkbox container */
+.checkbox-container {
+    margin-bottom: 20px;
+}
